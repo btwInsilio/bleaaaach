@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Montserrat:wght@300&family=Barlow:wght@800&family=Montserrat:wght@300;400;800&family=Poppins:wght@300;800&display=swap');
+
+/* Common */
+
+* {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    background-color: #e0e0e0;
+}
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+button, li {
+    cursor: pointer;
+}
+
+/* Header, Slider */
+
+header {
+    height: 759px;
+    border: none;
+    background-color: #242424;
+}
+.Container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+}
+.Wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 15s infinite;
+    float: left;
+}
+@keyframes slide{
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-100%);
+    }
+    60% {
+        transform: translateX(-100%);
+    }
+    80% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+img{
+    width: 100%;
+}
+
+/* Main, Plot, Main Characters */
+
+main {
+    padding: 0;
+    height: 1499px;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 1px 0;
+    background-image: url(../img/bckg.jpg);
+}
+.inner {
+    width: 84%;
+    margin: auto;
+}
+.innerHr {
+    display: flex;
+    justify-content: center;
+}
+.innerHr hr {
+    width: 80px;
+    padding: 2px;
+    background-color: #ff006e;
+    border: none;
+}
+.B1 {
+    width: 100%;
+    height: 160px;
+    border-left: 13px solid #ff006e;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+.textDiv {
+    height: 92px;
+    width: 100%;
+    margin: 40px auto;
+    border-left: 13px solid #ff006e;
+    display: flex;
+    align-items: center;
+}
+.textDiv h2 {
+    font-size: 50px;
+    text-align: left;
+    margin-left: 30px;
+    color: #f4f4f4;
+}
+.textConteiner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.textConteiner p {
+    margin-left: 30px;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 510;
+    color: #e0e0e0;
+}
+.textConteiner h2 {
+    font-size: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #e0e0e0;
+}
+.wrapperDiv {
+    width: 100%;
+    border-radius: 15px;
+    height: 986px;
+    margin: 0 auto;
+}
+.second hr {
+    border: none;
+}
+.mainImgDiv {
+    width: 100%;
+    height: 830px;
+    background-image: url(../img/bckg2.jpg);
+}
+.mainInner {
+    width: 98%;
+    margin: 0 auto;
+    height: 100%;
+}
+.row1 {
+    padding: 50px 50px 10px 50px;
+    height: 350px;
+}
+.row2 {
+    padding: 0 50px 0 50px;
+}
+.row1, .row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ImgBox {
+    width: auto;
+    width: 330px;
+    height: 350px;
+    text-align: center;
+}
+.ImgBox img {
+    width: 290px;
+    height: 290px;
+}
+.ImgBox h2 {
+    text-align: center;
+}
+
+/* Trailer */
+
+.section_Trailer {
+    width: 100%;
+    height: 621px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.videoConteiner {
+    width: 1102px;
+    height: 100%;
+    display: flex;
+}
+#playWrapper {
+    width: 1102px;
+    height: 100%;
+    position: absolute;
+}
+#play-btn {
+    width: 150px;
+    height: auto;
+    margin-top: 248px;
+    margin-left: 476px;
+}
+
+/* Switch Bar */
+
+.SwitchBar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 300px;
+}
+.SwitchInner {
+    width: 85%;
+    height: 70%;
+    margin: 0 auto;
+}
+.SwitchBar:last-child {
+    width: 370px;
+    height: auto;
+}
+.SwitchWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.SwitchWrapper button {
+    cursor: pointer;
+}
+#btn1, #btn2 {
+    border: none;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #484848;
+    color: #f4f4f4;
+    box-shadow: 1px 2px 7px 2px rgba(0, 0, 0, 0.4);
+}
+#asd {
+    display: none;
+}
+
+/* Footer, Links */
+
+footer {
+    background: url(../img/bckg.jpg);
+    height: 260px;
+}
+.hgh {
+    width: 85%;
+    height: 260px;
+    margin: 0 auto;
+}
+.FlexBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+#logoF {
+    width: auto;
+    height: 100px;
+    margin-top: 30px 0 0 10px;
+}
+.HFG {
+    width: 450px;
+    height: 70%;
+    border-right: 0.5px solid #969696;
+    color: #f4f4f4;
+}
+.HFG a {
+    color: #f4f4f4;
+    font-size: 1.4em;
+    margin-left: 10px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.HFG p {
+    width: 80%;
+    font-weight: 300;
+}
+.HFG li {
+    margin: 10px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.textImg {
+    text-align: left;
+}
+.textG {
+    display: flex;
+}
+.Addres {
+    border: none;
+}
+.hfg {
+    margin-left: 100px;
+    margin-top: 31px;
+}
+
+/* Cookie Notification */
+
+#cookie_notification {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    left: 71.5%;
+    width: 850px;
+    transform: translateX(-50%);
+    height: 80px;
+    background-color: #242424;
+    box-shadow: 5px 7px 15px 3px rgba(0, 0, 0, 0.4);
+}
+.text {
+    border-right: 8px solid #ff006e;
+    width: 90%;
+    height: 70%;
+    margin: auto 15px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+#cookie_notification h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-right: 15px;
+    color: #e0e0e0;
+    text-align: center;
+}
+#cookie_notification button {
+    text-transform: uppercase;
+    padding: 15px 50px;
+    margin-left: 10px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #484848;
+    color: #f4f4f4;
+}
